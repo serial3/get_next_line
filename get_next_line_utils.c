@@ -6,7 +6,7 @@
 /*   By: dromao-l <dromao-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 19:32:20 by dromao-l          #+#    #+#             */
-/*   Updated: 2021/11/14 08:14:23 by dromao-l         ###   ########.fr       */
+/*   Updated: 2021/11/25 15:33:27 by dromao-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,4 +67,29 @@ char	*str_appendc(char *str, char c)
 	temp[i++] = c;
 	temp[i] = '\0';
 	return (temp);
+}
+
+char	*str_join(char *str1, char *str2)
+{
+	char	*new;
+	int		a;
+	int		b;
+
+	if (str1 == NULL || str2 == NULL)
+		return (NULL);
+	new = malloc(sizeof(char) * ft_strlen(str1) + ft_strlen(str2) + 1);
+	a = 0;
+	while (str1[a] != '\0')
+	{
+		new[a] = str1[a];
+		a++;
+	}
+	b = 0;
+	while (str2[b] != '\0')
+	{
+		new[a + b] = str2[b];
+		b++;
+	}
+	new[a + b] = '\0';
+	return (new);
 }

@@ -1,5 +1,5 @@
 Get_Next_Line project.
 
-Starting right now.
+Last function missing.
 
 ##### Made by Serial3.
