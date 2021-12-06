@@ -6,7 +6,7 @@
 /*   By: dromao-l <dromao-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 19:32:20 by dromao-l          #+#    #+#             */
-/*   Updated: 2021/11/25 15:33:27 by dromao-l         ###   ########.fr       */
+/*   Updated: 2021/12/06 09:15:33 by dromao-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,7 +69,7 @@ char	*str_appendc(char *str, char c)
 	return (temp);
 }
 
-char	*str_join(char *str1, char *str2)
+char	*ft_strjoin(char *str1, char *str2)
 {
 	char	*new;
 	int		a;

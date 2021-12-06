@@ -1,5 +1,5 @@
 Get_Next_Line project.
 
-Last function missing.
+Infinite loop to fix.
 
 ##### Made by Serial3.
