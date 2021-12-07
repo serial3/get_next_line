@@ -6,7 +6,7 @@
 /*   By: dromao-l <dromao-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 19:27:29 by dromao-l          #+#    #+#             */
-/*   Updated: 2021/12/06 09:41:05 by dromao-l         ###   ########.fr       */
+/*   Updated: 2021/12/07 08:09:07 by dromao-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
 
 char	*get_next_line(int fd);
 void	ft_putstr(char *str);
-char	*str_appendc(char *str, char c);
+char	*str_catnew(char *str, char c);
 int		ft_strlen(char *str);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strjoin(char *str1, char *str2);

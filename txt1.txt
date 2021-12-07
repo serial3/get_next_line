@@ -1,8 +1,6 @@
-teste 1\n..
+teste 1\n...
 
-
-ora vamos la \n \n
-
+trololol
 
 very nice
 END OF FILE

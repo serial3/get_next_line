@@ -6,7 +6,7 @@
 /*   By: dromao-l <dromao-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 19:32:24 by dromao-l          #+#    #+#             */
-/*   Updated: 2021/12/06 14:03:54 by dromao-l         ###   ########.fr       */
+/*   Updated: 2021/12/07 08:24:42 by dromao-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,12 +18,13 @@ char	*get_last_index(char *str)
 	int		i;
 
 	re = (char *)malloc(sizeof(char));
-	if (re == NULL || str == NULL)
+	if (re == NULL || ft_strlen(str) == 0)
 		return (NULL);
+	re = '\0';
 	i = 0;
 	while (str[i] != '\0')
 	{
-		re = str_appendc(re, str[i]);
+		re = str_catnew(re, str[i]);
 		if (str[i] == '\n')
 			break ;
 		i++;

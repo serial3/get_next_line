@@ -6,7 +6,7 @@
 /*   By: dromao-l <dromao-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 19:32:20 by dromao-l          #+#    #+#             */
-/*   Updated: 2021/12/06 09:15:33 by dromao-l         ###   ########.fr       */
+/*   Updated: 2021/12/07 08:23:28 by dromao-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	*ft_strchr(const char *s, int c)
 	return (NULL);
 }
 
-char	*str_appendc(char *str, char c)
+char	*str_catnew(char *str, char c)
 {
 	char	*temp;
 	int		i;
