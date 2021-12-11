@@ -1,5 +1,5 @@
 Get_Next_Line project.
 
-Infinite loop to fix.
+Finished !
 
 ##### Made by Serial3.

@@ -6,7 +6,7 @@
 /*   By: dromao-l <dromao-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 19:32:24 by dromao-l          #+#    #+#             */
-/*   Updated: 2021/12/07 08:24:42 by dromao-l         ###   ########.fr       */
+/*   Updated: 2021/12/11 08:56:13 by dromao-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,26 +32,33 @@ char	*get_last_index(char *str)
 	return (re);
 }
 
+void	newmemstr(char *str)
+{
+	str = (char *)malloc(sizeof(char));
+	str[0] = '\0';
+}
+
 char	*get_next_line(int fd)
 {
 	static char	*str;
 	char		temp[BUFFER_SIZE + 1];
 	char		*res;
-	int			count;
+	int			r_count;
 
-	count = BUFFER_SIZE;
-	str = (char *)malloc(sizeof(char));
-	str[0] = '\0';
+	r_count = BUFFER_SIZE;
+	newmemstr(str);
+	if (str == NULL)
+		str = (char *)malloc(sizeof(char));
 	if (fd < 0 || BUFFER_SIZE < 0 || str == NULL)
 		return (NULL);
-	while (!ft_strchr(str, '\n') && count == BUFFER_SIZE)
+	while (!ft_strchr(str, '\n') && r_count == BUFFER_SIZE)
 	{
-		count = read(fd, &temp, BUFFER_SIZE);
-		if (count == -1)
+		r_count = read(fd, &temp, BUFFER_SIZE);
+		if (r_count == -1)
 			return (NULL);
-		else if (count == 0)
+		else if (r_count == 0)
 			break ;
-		temp[count] = '\0';
+		temp[r_count] = '\0';
 		str = ft_strjoin(str, temp);
 	}
 	res = get_last_index(str);
