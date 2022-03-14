@@ -6,7 +6,7 @@
 /*   By: dromao-l <dromao-l@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/03 19:32:24 by dromao-l          #+#    #+#             */
-/*   Updated: 2021/12/11 08:56:13 by dromao-l         ###   ########.fr       */
+/*   Updated: 2022/03/14 16:29:32 by dromao-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ char	*get_last_index(char *str)
 	re = (char *)malloc(sizeof(char));
 	if (re == NULL || ft_strlen(str) == 0)
 		return (NULL);
-	re = '\0';
 	i = 0;
 	while (str[i] != '\0')
 	{
